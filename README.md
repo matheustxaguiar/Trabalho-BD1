@@ -1,19 +1,16 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  Hospital Robert Rey
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
+Matheus Teixeira de Aguiar:matheustxaguiar@gmail.com<br>
 segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
-
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+> O sistema tem como propósito digitalizar e apoiar as atividades realizadas pelo Hospital Robert Rey, integrando os setores, fornecendo maior agilidade e confiabilidade nas informações essenciais ao seu funcionamento, reduzindo o tempo de espera, tanto dos pacientes, quanto dos funcionários.
  
 
 ### 3.MINI-MUNDO<br>
@@ -24,7 +21,12 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+>O paciente que chegar no hospital Robert Rey deve passar primeiro pela recepção, se for a sua primeira vez no hospital, deve ser criado o seu cadastro (identidade, nome, idade, sexo email e telefone, profissão e se tem plano de saúde). Logo após a recepção, deve-se registrar a sua entrada e o paciente deve se dirigir ao consultório clínico geral. 
+O médico clínico irá abrir uma nova ficha do paciente e preencher os seguintes dados: dados anatômicos obtidos (peso, altura e pressão), possíveis alergias a medicamentos, data do dia da consulta, quais enfermidades o paciente diz sentir e seu grau de gravidade (baseado no protocolo de Manchester), e por fim para qual médico especialista ele deve ser encaminhado. 
+O especialista poderá receitar remédios, terapia, internação ou a combinação entre as opções e também pedir exames. Como em qualquer interação do paciente com o hospital, o especialista deve registrar a consulta do paciente no sistema.
+Há setores de terapia no hospital, como fisioterapia, psicologia, enfermaria e UTI. Cada um desses setores têm uma capacidade máxima de atendimento, por causa disso é necessário controlar a quantidade de pacientes que estão sendo tratados por setor.
+Todos os trabalhadores do hospital devem ser cadastrados com identidade, nome, idade, sexo email, telefone, data de contratação, profissão e salário. Para os trabalhadores da saúde, além da profissão, deve ser preenchida sua especialidade. A administração do hospital Robert Rey tem suas diretrizes e normas administrativas, que podem mudar ao longo do tempo, mas inicialmente está definido que cada setor do hospital tenha uma quantidade específica de profissionais para cada setor.
+ 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
@@ -33,7 +35,7 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+![Arquivo PDF do Protótipo Balsamiq feito para o hospital Robert Rey](https://github.com/discipbd1/trab01/blob/master/arquivos/Prototipo_HospitalRobertRey.pdf?raw=true "Hospital Robert Rey")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
@@ -52,7 +54,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+![Exemplo de Tabela de dados do Hospital Robert Rey](https://github.com/discipbd1/trab01/blob/master/arquivos/Prototipo_HospitalRobertRey.xlsx?raw=true "Tabela - Hospital Robert Rey")
     
     
 ### 5.MODELO CONCEITUAL<br>
@@ -65,7 +67,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/discipbd1/trab01/blob/master/images/ModeloConceitual.png?raw=true "Modelo Conceitual Hospital Robert Rey")
     
     
         
