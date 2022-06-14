@@ -7,9 +7,9 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Matheus Teixeira de Aguiar:matheustxaguiar@gmail.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
+Matheus Teixeira de Aguiar : matheustxaguiar@gmail.com<br>
+Jhovany Paulo Schelemberg Murgia : schelemberg_jps@hotmail.com<br>
+Douglas Correa Nunes : douglasc7nunes@gmail.com<br>
 
 <hr>
 
@@ -37,7 +37,18 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
+
+  1) Quantas pessoas são pacientes?
+  2) Quantas pessoas são funcionários?
+  3) Quantos pacientes estão em tratamento?
+  4) Quais serviços cada paciente utilizou?
+  5) Qual a média de salário dos funcionários?
+  6) Quantos funcionários estão alocados em cada setor?
+  7) Número de pacientes por setor?
+  8) Qual serviço mais utilizado pelos pacientes?
+  9) Qual plano de saúde mais utilizado pelos pacientes?
+
+
 > A Empresa DevCom precisa inicialmente dos seguintes relatórios:
 * Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
 * Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
@@ -71,16 +82,67 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
 
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: Carlos Breno, Clebes Salustiano e Éllen Neves; 
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
-#### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+#### 5.2 Descrição dos dados<br>
+  **PESSOA:** tabela que armazena os dados pessoais dos clientes e funcionários cadastrados no sistema.<br>
+  - id_pessoa: campo que armazena identificador usado para cada pessoa no sistema;
+  - identidade: campo que armazena o número do RG de cada pessoa no sistema;
+  - nome: campo que armazena o nome completo de cada pessoa no sistema;
+  - sexo: campo que armazena o sexo relativo de cada pessoa no sistema;
+  - data_nascimento: campo que armazena a data de nascimento de cada pessoa no sistema;
+  - email: campo que armazena o email de cada pessoa registrada no sistema;
+  - telefone: campo que armazena o número de telefone de cada pessoa registrada no sistema.
 
+ **FUNÇÃO:** tabela que armazena as funções que os funcionários podem exercer no hospital com seu respectivo salário
+ id_função: campo que armazena o identificador de cada função registrada no sistema
+ funcao: campo que armazena o nome de cada função
+ salario: campo que armazena o valor do salário relativo a cada função 
+
+ **PACIENTE:** tabela que armazena informações específicas em relação aos pacientes
+ id_paciente: campo que armazena o identificador de cada paciente
+ profissao: campo que armazena a profissão do paciente
+ plano_saude: campo que armazena o plano de saúde de cada paciente
+ id_pessoa: campo que armazena o identificador da pessoa que é também um paciente
+
+ **SETOR:** tabela que armazena as informações relativas ao setores do hospital
+ id_setor: campo que armazena o identificador de cada setor
+ nome: campo que armazena o nome de cada setor
+ capacidade_paciente: campo que armazena a capacidade máxima de pacientes que o setor suporta
+
+ **FUNCIONÁRIO:** tabela que armazena informações específicas em relação aos funcionários 
+ id_funcionario: campo que armazena o identificador de cada funcionário registrado no sistema
+ data_contratacao: campo que armazena a data de contratação do funcionário
+ id_pessoa: campo que armazena o identificador de uma pessoa que também é funcionário
+ id_funcao: campo que armazena o identificador da função exercida por este funcionário
+ Tabela Ficha_Paciente: tabela que armazena as informações relativas ao tratamento recebido pelos pacientes.
+ id_ficha: campo que armazena o identificador da ficha de cada paciente
+ situacao_tratamento: campo que armazena a situação do tratamento que o paciente está recebendo, por exemplo, se o tratamento está em  andamento ou o paciente já recebeu alta 
+ data_emissao: campo que armazena a data de criação da ficha
+ grau_gravidade: campo que armazena o grau de gravidade da enfermidade que sta sendo tratada no paciente
+ notacao: campor que armazena uma breve descrição da situação do paciente
+ id_pessoa: campo que armazena o identificador da pessoa que é paciente
+ id_setor; campo que armazena o identificador do setor onde o paciente está sendo tratado
+ id_funcionario: campo que armazena o identificador do funcionário responsável pelo tratamento no qual o paciente está sendo submetido
+
+
+ **SERVICO:** tabela que armazena informações relativas aos serviços que o hospital oferece
+ id_serivco: campo que armazena o identificador de cada serviço cadastrado no sistema
+ nome: campo que armazena o nome do serviço
+ valor: campo que armazena o valor do serviço
+
+ **PACIENTE_SERVICO:** tabela que relaciona o paciente aos serviços utilizados por ele
+ id_ficha; campo que armazena o identificador da ficha do paciente
+ id_servico: campo que armazena o identificador do serviço prestado a esse paciente
+ data_servico: campo que armazena a data em que o serviço foi prestado
+
+ **FUNCAO_SETOR:** tabela que relaciona os setores e as funções dos funcionários que ele necessita para funcionar 
+ id_setor: campo que armazena o identificador do setor
+ id_funcao: campo que armazena o identificador da função que atua no setor
+ min_capacidade: campo que armazena a quantidade mínima de profissionais da função necessárias para o funcionamento do setor 
+ CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
+ CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 <hr>
 
 ### 6	MODELO LÓGICO<br>
