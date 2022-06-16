@@ -35,33 +35,22 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 ![Alt text](arquivos/capa_prototipo_robertrey.png "Prototipo Robert Rey")
 ![Arquivo PDF do Protótipo Balsamiq feito para o hospital Robert Rey](https://github.com/matheustxaguiar/Trabalho-BD1/blob/master/arquivos/Prototipo_HospitalRobertRey.pdf?raw=true "Hospital Robert Rey")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-
-  1) Quantas pessoas são pacientes?
-  2) Quantas pessoas são funcionários?
-  3) Quantos pacientes estão em tratamento?
-  4) Quais serviços cada paciente utilizou?
-  5) Qual a média de salário dos funcionários?
-  6) Quantos funcionários estão alocados em cada setor?
-  7) Número de pacientes por setor?
-  8) Qual serviço mais utilizado pelos pacientes?
-  9) Qual plano de saúde mais utilizado pelos pacientes?
-
 
 > O hospital Robert Rey precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
-
+* Relatório que obtenha o número de pacientes no hospital.
+* Relatório que exponha quantos funcionários há no hospital.
+* Relatório refetente ao nome do funcionário, setor que trabalha e respectiva função e salário, bem como a média salarial desse setor.
+* Relatório que mostre o número corrente de pacientes em tratamento no hospital de acordo com o setor e apresente de forma decrescente os setores mais usados.
+* Relatório contendo o valor total ganho em cada tipo de serviço prestado, bem como o a quantidade utilizada destes.
+* Relatório que mostre o nome do paciente e o valor total a pagar pelos serviços utilizados.
+* Relatório sobre a média salarial e desvio padrão do salário dos funcionários funcionários.
+* Relatório que informe o número de funcionários alocados por setor.
+* Relatório relativo ao número de pacientes por setor.
+* Relatório exponto dos serviços mais usados pelos pacientes.
+* Relatório informando o plano de saúde mais utilizado pelos pacientes.
 
 #### 4.3 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    
+
 ![Exemplo de Tabela de dados do Hospital Robert Rey](https://github.com/discipbd1/trab01/blob/master/arquivos/Prototipo_HospitalRobertRey.xlsx?raw=true "Tabela - Hospital Robert Rey")
  
 <hr>
@@ -69,16 +58,6 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 ### 5.MODELO CONCEITUAL<br>
 
 ![Alt text](arquivos/modelo_conceitual.png "Modelo Conceitual Robert Rey")
-
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).      
-    
 
 
 #### 5.1 Validação do Modelo Conceitual
@@ -164,15 +143,10 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
 ![Alt text](arquivos/modelo_logico.jpg "Modelo Lógico Robert Rey")
 
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
         
 <hr>
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
 
 ```sql
 DROP TABLE if exists pessoa cascade;
@@ -264,11 +238,6 @@ CREATE TABLE Paciente_Servico(id_ficha int,
 <hr>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
 
 ```sql
 INSERT INTO Pessoa (id_pessoa, identidade, nome, data_nascimento, sexo, email, telefone)
@@ -347,8 +316,14 @@ INSERT INTO Funcao_Setor (id_setor, id_funcao, min_capacidade)
 <hr>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+
+![Colab Consulta dos Dados Inseridos - Hospital Robert Rey](https://colab.research.google.com/drive/11GeHO5oMvWhBsLwqPevf8lK17uPUco-o?usp=sharing "Colab Consulta dos Dados Inseridos - Hospital Robert Rey")
+
+<br>
+<br>
+
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
