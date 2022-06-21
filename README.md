@@ -319,7 +319,7 @@ INSERT INTO Funcao_Setor (id_setor, id_funcao, min_capacidade)
 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-![Colab Consulta dos Dados Inseridos - Hospital Robert Rey](https://colab.research.google.com/drive/11GeHO5oMvWhBsLwqPevf8lK17uPUco-o?usp=sharing "Colab Consulta dos Dados Inseridos - Hospital Robert Rey")
+[Colab Consulta dos Dados Inseridos - Hospital Robert Rey](https://colab.research.google.com/drive/11GeHO5oMvWhBsLwqPevf8lK17uPUco-o?usp=sharing)
 
 <br>
 <br>
