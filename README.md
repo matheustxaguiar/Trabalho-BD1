@@ -51,7 +51,7 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
 #### 4.3 TABELA DE DADOS DO SISTEMA:
 
-![Exemplo de Tabela de dados do Hospital Robert Rey](https://github.com/discipbd1/trab01/blob/master/arquivos/Prototipo_HospitalRobertRey.xlsx?raw=true "Tabela - Hospital Robert Rey")
+[Exemplo de Tabela de dados do Hospital Robert Rey](https://docs.google.com/spreadsheets/d/1kBO0NiIk8IBr1KOPoygR_vm81mIjuepTbDXm-eZXArY/edit?usp=sharing "Tabela - Hospital Robert Rey")
  
 <hr>
     
