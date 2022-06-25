@@ -312,7 +312,7 @@ INSERT INTO Ficha_Paciente (id_ficha,situacao_tratamento, data_emissao, id_grau_
            (0003,'Em Tratamento', '2022-01-08', 0003,'Paciente com diarreia e vomito', 0003,0005,0002),
            (0004,'Em Tratamento', '2022-09-20', 0004,'Paciente gosta de Matematica Discreta', 0004,0006,0005),
            (0005,'Alta', '2022-11-23', 0003,'Paciente relata que caiu de moto, mas ta de boa', 0005,0004,0005),
-	     (0006,'Em Tratamento','2022-01-14', 0001,'Paciente febril com diarreia', 0006,0005,0004),
+	   (0006,'Em Tratamento','2022-01-14', 0001,'Paciente febril com diarreia', 0006,0005,0004),
            (0007,'Alta', '2022-09-23', 0002,'Sindrome do pato', 0007,0004,0004),
            (0008,'Em Tratamento', '2022-07-23', 0003,'Paciente com tremedeira', 0008,0006,0004),
            (0009,'Em Tratamento', '2022-07-15', 0004,'Paciente com mudança no paladar', 0009,0006,0005),
@@ -427,6 +427,7 @@ INSERT INTO Grau_Gravidade (id_gravidade, nivel)
            (0003, 'urgente'),
            (0004, 'muito urgente');
 ```
+[Inserts Aplicados nas Tabelas](arquivos/inserts_aplicados.sql "Insert Aplicado nas Tabelas")
 
 <hr>
 
