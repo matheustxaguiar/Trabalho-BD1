@@ -141,7 +141,7 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](images/modelo_logico.jpg "Modelo Lógico Robert Rey")
+![Alt text](images/modelo_logico.png "Modelo Lógico Robert Rey")
 
  
 <hr>
