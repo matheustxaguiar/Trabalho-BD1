@@ -85,9 +85,19 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
  **PACIENTE:** tabela que armazena informações específicas em relação aos pacientes.
  - id_paciente: campo que armazena o identificador de cada paciente;
- - profissao: campo que armazena a profissão do paciente;
- - plano_saude: campo que armazena o plano de saúde de cada paciente;
  - id_pessoa: campo que armazena o identificador da pessoa que é também um paciente.
+
+  <br><br>
+  
+ **PROFISSAO:** tabela que armazena as profissões dos pacientes.
+ - id_profissao: campo que armazena o identificador da profissao;
+ - nome: campo que armazena a nome da profissão;
+
+  <br><br>
+  
+ **PLANO_SAUDE:** tabela que armazena os planos de saúde abrangidos pelo hospital Robert Rey.
+ - id_plano_saude: campo que armazena o identificador do plano de saude;
+ - nome: campo que armazena o nome plano de saúde;
  
  <br><br>
 
@@ -115,6 +125,12 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
  - id_pessoa: campo que armazena o identificador da pessoa que é paciente;
  - id_setor; campo que armazena o identificador do setor onde o paciente está sendo tratado;
  - id_funcionario: campo que armazena o identificador do funcionário responsável pelo tratamento no qual o paciente está sendo submetido.
+
+  <br><br>
+  
+ **GRAU_GRAVIDADE:** tabela que os níveis de gravidade dos pacientes.
+ - id_gravidade: campo que armazena o identificador da gravidade;
+ - nivel: campo que armazena o grau de gravidade da enfermidade que sta sendo tratada no paciente;
  
  <br><br>
 
