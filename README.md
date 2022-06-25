@@ -57,7 +57,7 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
     
 ### 5.MODELO CONCEITUAL<br>
 
-![Alt text](imagens/modelo_conceitual.png "Modelo Conceitual Robert Rey")
+![Alt text](images/modelo_conceitual.png "Modelo Conceitual Robert Rey")
 
 
 #### 5.1 Validação do Modelo Conceitual
@@ -141,7 +141,7 @@ O protótico foi desenvolvido usando a plataforma: https://balsamiq.com/products
 
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](imagens/modelo_logico.jpg "Modelo Lógico Robert Rey")
+![Alt text](images/modelo_logico.jpg "Modelo Lógico Robert Rey")
 
  
 <hr>
