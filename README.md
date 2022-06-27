@@ -442,6 +442,8 @@ INSERT INTO Grau_Gravidade (id_gravidade, nivel)
 
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
+#### Segue abaixo o link do Colab com os itens 9.1 à 9.10<br>
+[Colab Consulta dos Itens 9.1 à 9.10 - Hospital Robert Rey](https://colab.research.google.com/drive/11GeHO5oMvWhBsLwqPevf8lK17uPUco-o?usp=sharing)
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
