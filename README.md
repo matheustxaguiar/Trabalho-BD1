@@ -480,12 +480,51 @@ INSERT INTO Grau_Gravidade (id_gravidade, nivel)
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
+#### Segue abaixo o link do Colab com os Relatórios em forma gráfica<br>
+[Colab Consulta do Item 10- Hospital Robert Rey](https://colab.research.google.com/drive/11GeHO5oMvWhBsLwqPevf8lK17uPUco-o?usp=sharing)
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-    
+
+#### Relatório 1<br>
+Objetivo: Relatório refente a capacidade máxima suportada por um setor e a quantidade corrente de pacientes ali presentes.
+<p align="center">
+  <img src="images/capacidade_pacientes.png">
+</p>
+
+<hr>
+
+#### Relatório 2<br>
+Objetivo: Relatório informando o plano de saúde mais utilizado pelos pacientes.
+<p align="center">
+  <img src="images/plano_saude.png">
+</p>
+
+<hr>
+
+#### Relatório 3<br>
+Objetivo: Relatório contendo a receita total ganha por procedimento no hospital.
+<p align="center">
+  <img src="images/receita_procedimento.png">
+</p>
+
+<hr>
+
+#### Relatório 4<br>
+Objetivo: Verificar a média salarial dos homens e das mulheres.
+<p align="center">
+  <img src="images/salario_setor.png ">
+</p>
+
+<hr>
+
+#### Relatório 5<br>
+Objetivo: Relatório referente a média salarial de um setor.
+<p align="center">
+  <img src="images/salario_sexo.png">
+</p>
+ 
+<hr>
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
